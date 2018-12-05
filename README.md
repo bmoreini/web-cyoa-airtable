@@ -19,11 +19,11 @@ To configure the code to run with a different base, make the following changes t
     Import the two .csv files to create a pair of tables. The table created from 'Scenes-Grid view.csv' is the table that has its URL assigned at line 22 of rpg-tollbooth.js. The table from 'Choices-Grid view.csv' is the table that has its URL in the AJAX call at line 41.
     In the table from 'Scenes-Grid view.cvs', customize the following field types:
         story: Long text
-        choices: Link to another record (select the other table)
-        targets: Link to another record (select the other table)
-        delay: number
+        choices: Link to another record (select the other table) Allow multiple records. 
+        targets: Link to another record (select the other table) Allow multiple records. 
+        delay: integer.
     In the table from 'Choices-Grid view.cvs', customize the following field types:
-        scene: Link to another record (select the other table)
-        targets: Link to another record (select the other table)
+        scene: Link to another record (select the other table) Allow multiple records. 
+        targets: Link to another record (select the other table) Allow multiple records. 
         
 Simcha Wood, truthfulthomas@gmail.com
