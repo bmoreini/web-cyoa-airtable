@@ -2,7 +2,7 @@
 
 window.onload = start;
 // Change this to match ID in your AirTable.
-const OPENING_SCENE_ID = 'recg6BnajGBk86VoE';
+const OPENING_SCENE_ID = 'recxxxxxxxxxxxx';
 
 function start() {
     setup();
@@ -14,12 +14,12 @@ function getScene(record_id) {
   // Replace with your own AirTable API key.
   // Normally, you will want to keep this private.
   // This key will only be good for a couple of days.
-  const key = 'keywDn60rw1pPyqvh';
+  const key = 'keyxxxxxxxxxxxxxxxxh';
   // Alter this to match your own AirTable base.
   // URL format is
   // https://api.airtable.com/v0/<BASE_ID>/<TABLE_NAME>/<RECORD_ID>?api_key=<YOUR_API_KEY>
   // See airtable.com/api
-  const url = `https://api.airtable.com/v0/app7rQunR804ezTnG/Scenes/${record_id}?api_key=${key}`;
+  const url = `https://api.airtable.com/v0/appxxxxxxxxxxxxxx/Scenes/${record_id}?api_key=${key}`;
 
   // Make GET request to AirTable base.
   $.ajax({ url: url, type: 'GET' })
@@ -38,7 +38,7 @@ function getScene(record_id) {
         // Collect AirTable queries for every choice into an array.
         for (let idx = 0; idx < data.fields.choices.length; idx++) {
           choices.push($.ajax({
-            url: `https://api.airtable.com/v0/app7rQunR804ezTnG/Choices/${data.fields.choices[idx]}?api_key=${key}`,
+            url: `https://api.airtable.com/v0/appxxxxxxxxxxxx/Choices/${data.fields.choices[idx]}?api_key=${key}`,
             type: 'GET'
           }));
         }
