@@ -1,15 +1,15 @@
-﻿choice,scene,targets,Imported table
-First Time,Opening Scene,Meet Milo,Opening Scene
-Second Life,Opening Scene,Discover Tollbooth,Opening Scene
-Sigh,Meet Milo,Go On,Meet Milo
-Sigh Again,Go On,Discover Tollbooth,Go On
-Unpack It,Discover Tollbooth,Unpack Tollbooth,
-Sleep On It,Discover Tollbooth,Wild Nightmares,
-Tell Mom,Discover Tollbooth,Mom Can't See It,
-Unpack It,Mom Can't See It,Unpack Tollbooth,
-Sleep On it,Mom Can't See It,Wild Nightmares,
-Unpack It,Wild Nightmares,Unpack Tollbooth,
-Tell Mom,Wild Nightmares,Mom Can't See It,
-Assemble It,Unpack Tollbooth,PLACEHOLDER,
-Check for Return Address,Unpack Tollbooth,PLACEHOLDER,
-Call the Bomb Squad,Unpack Tollbooth,PLACEHOLDER,
+choice,scene,targets
+First Time,Opening Scene,Meet Milo
+Second Life,Opening Scene,Discover Tollbooth
+Sigh,Meet Milo,Go On
+Sigh Again,Go On,Discover Tollbooth
+Unpack It,Discover Tollbooth,Unpack Tollbooth
+Sleep On It,Discover Tollbooth,Wild Nightmares
+Tell Mom,Discover Tollbooth,Mom Can't See It
+Unpack It,Mom Can't See It,Unpack Tollbooth
+Sleep On it,Mom Can't See It,Wild Nightmares
+Unpack It,Wild Nightmares,Unpack Tollbooth
+Tell Mom,Wild Nightmares,Mom Can't See It
+Assemble It,Unpack Tollbooth,PLACEHOLDER
+Check for Return Address,Unpack Tollbooth,PLACEHOLDER
+Call the Bomb Squad,Unpack Tollbooth,PLACEHOLDER
