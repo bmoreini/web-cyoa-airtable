@@ -25,5 +25,6 @@ To configure the code to run with a different base, make the following changes t
     In the table from 'Choices-Grid view.cvs', customize the following field types:
         scene: Link to another record (select the other table) Allow multiple records. 
         targets: Link to another record (select the other table) Allow multiple records. 
+    The field linking will create new columns in Scenes and Choices. You can then delete the old choices and targets fields and rename the new columns to choices and targets (technically, targets in Scenes could be called anything since we don't currently reference this field in the code).
         
 Simcha Wood, truthfulthomas@gmail.com
