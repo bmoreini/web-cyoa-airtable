@@ -1,10 +1,18 @@
+window.onload = start;
+
+function start() {
+    setup();
+	/** CHANGE THE FIRST FUNCTION FOR TESTING **/
+    tollbooth();
+}
+
 var buttonElement = document.getElementById("button1");
 var textTimer;
 
 function setup() {
     // setOptions();
     setOptions([
-        { choice: "test 1", target: "test1" },
+        { choice: "RPG not loading", target: "test1" },
         { choice: "test 2", target: "test2" },
         { choice: "test 3", target: "test3" }
     ]);
