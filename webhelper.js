@@ -1,27 +1,24 @@
 window.onload = start;
 
-function start() {
-    setup();
-	/** CHANGE THE FIRST FUNCTION FOR TESTING **/
-    tollbooth();
-}
-
+var options=[];
 var buttonElement = document.getElementById("button1");
+var currentStoryElement = document.getElementById("currentStory");
+var dropdown = document.getElementById("choices");
+var messages = [];
+var choices;
+var answer;
 var textTimer;
 
+function start() {
+    setup();
+}
+
+
 function setup() {
-    // setOptions();
-    setOptions([
-        { choice: "RPG not loading", target: "test1" },
-        { choice: "test 2", target: "test2" },
-        { choice: "test 3", target: "test3" }
-    ]);
-    var buttonElement = document.getElementById("button1");
+    setOptions([{ choice: "No DB", target: "" }]);
     buttonElement.innerHTML = "What will you do?"; 
     buttonElement.onclick = function () {
-        var dropdown = document.getElementById("choices");
-        // console.log(dropdown.value);
-        getScene(dropdown.value);
+    getScene(dropdown.value);
     }
 }
 
@@ -31,6 +28,7 @@ function setOptions(options) {
         dropdown.remove(0);
     }
     for (var i = 0; i < options.length; i++) {
+		// This is object-oriented JavaScript (hence capital letter)
         var option = new Option(options[i].choice, options[i].target);
         dropdown.options.add(option);
     }
@@ -40,25 +38,30 @@ function displayStory(text, delay = false, append = false) {
     var currentStoryElement = document.getElementById("currentStory");
     if (typeof(text) === 'string') {
         currentStoryElement.innerHTML = text;
-    } else if (delay) {
+    } 
+	// the following makes text reveal slowly if a delay is indicated in the database
+	else if (delay) {
         // Disable the button to prevent making a selection before
         // full message is delivered.
         buttonElement.disabled = true;
         // Keep shifting strings from the array until it is empty.
         if (append) {
             currentStoryElement.innerHTML += `<br /><br />${text.shift()}`;
-        } else {
+        } 
+		else {
             currentStoryElement.innerHTML = text.shift();
         }
         if (text.length) {
             setTimeout(function () {
                 displayStory(text, delay, true);
             }, delay);
-        } else {
+        } 
+		else {
             // Done. Re-enable button.
             buttonElement.disabled = false;
         }
-    } else {
+    } 
+	else {
         currentStoryElement.innerHTML = text.join('<br /><br />');
     }
 }

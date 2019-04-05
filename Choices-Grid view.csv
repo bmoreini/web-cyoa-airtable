@@ -1,15 +1,17 @@
-choice,scene,targets
-First Time,Opening Scene,Meet Milo
-Second Life,Opening Scene,Discover Tollbooth
-Sigh,Meet Milo,Go On
-Sigh Again,Go On,Discover Tollbooth
-Unpack It,Discover Tollbooth,Unpack Tollbooth
+﻿choice,scene,targets
 Sleep On It,Discover Tollbooth,Wild Nightmares
 Tell Mom,Discover Tollbooth,Mom Can't See It
-Unpack It,Mom Can't See It,Unpack Tollbooth
+Unpack It,Discover Tollbooth,Unpack Tollbooth
+Sigh Again,Go On,Discover Tollbooth
+Sigh,Meet Milo,Go On
+Pick Nose,Meet Milo,Wild Nightmares
 Sleep On it,Mom Can't See It,Wild Nightmares
+Unpack It,Mom Can't See It,Unpack Tollbooth
+Second Life,Opening Scene,Discover Tollbooth
+First Time,Opening Scene,Meet Milo
+Mastermind,Opening Scene,Mastermind
+Call the Bomb Squad,Unpack Tollbooth,
+Check for Return Address,Unpack Tollbooth,
+Assemble It,Unpack Tollbooth,
 Unpack It,Wild Nightmares,Unpack Tollbooth
 Tell Mom,Wild Nightmares,Mom Can't See It
-Assemble It,Unpack Tollbooth,PLACEHOLDER
-Check for Return Address,Unpack Tollbooth,PLACEHOLDER
-Call the Bomb Squad,Unpack Tollbooth,PLACEHOLDER
