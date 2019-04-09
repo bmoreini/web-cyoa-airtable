@@ -1,4 +1,4 @@
-// rpg-tollbooth.js
+// this matches WEB-CYOA
 
 window.onload = start;
 // Change this to match ID in your AirTable.
